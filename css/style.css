@@ -1,0 +1,348 @@
+:root{
+    --bg-black-900:#434343;
+    --bg-black-100:#000;
+    --txt-black-900:#fff;
+    --txt-black-100:#434343;
+ }
+ body{
+     line-height: 1.5;
+     font-size: 16px;
+     font-family: 'Poppins', sans-serif ;
+ }
+ ul{
+     list-style: none;
+ }
+ *{
+     margin: 0;
+     padding: 0;
+     outline: none;
+     text-decoration: none;
+     box-sizing: border-box;
+ }
+ ::before, ::after
+ {
+     box-sizing: border-box;
+ }
+ 
+ 
+ .main-container{
+     background-color: var(--bg-black-100);
+     color: var(--txt-black-900);
+ }
+ nav{
+     display: flex;
+     justify-content: space-between;
+     padding: .5em 2.5em 1em;
+     color: var(--skin-color);
+     font-size: 30px;
+     font-weight: 800;
+ }
+ .name .fa{
+     font-size: 20px;
+     font-weight: 800;
+ }
+ .nav-items{
+   display: flex;
+ }
+ .nav-items li a{
+     padding: 0 .5em;
+     color: var(--skin-color);
+     font-size: 20px;
+     font-weight: 600;
+ }
+ 
+ 
+ .container{
+     display: flex;
+     justify-content: center;
+     flex: 1 1 100%;
+ }
+ .about-container{
+     display: flex;
+     max-width: 85%;
+     flex-wrap: wrap-reverse;
+ }
+ .about-info{
+     flex: 1 1 60%;
+     max-width: 55%;
+     padding: 3em 3em 3em 0 ;
+     transition: all 0.75s ease;
+ }
+ .about-info h4{
+    font-size: 30px;
+    font-weight: 800;
+ }
+ .intro{
+   color: var(--txt-black-100);
+ }
+ .typing{
+     font-size: 25px;
+     font-weight: 600;
+     color: var(--skin-color);
+ }
+ .about-info p{
+     font-size: 16px;
+     font-weight: 400;
+     margin: 3em 3.5em 0 0;
+ }
+ .about-info p::before{
+     content: '';
+     position: absolute;
+     width: 275px;
+     height: 85px;
+     background:var(--bg-black-900);
+     opacity: .3;
+     margin-top: -25px;
+     margin-left: -35px;
+ }
+ .btn-cv{
+     padding: 1em 2em;
+     font-size: 20px;
+     font-weight: 500;
+     color: var(--txt-black-900);
+     transition: all .3s ease;
+ }
+ .btn-cv::before{
+     content: '';
+     position: absolute;
+     width: 110px;
+     height: 3px;
+     background:var(--skin-color);
+     margin-top: 25px;
+     margin-left: 27px;
+ }
+ .btn:hover{
+    transform: scale(1.025);
+    transition: all 0.3s ease;
+ }
+ .btn:active{
+     opacity: 0;
+     transition: all 0.3s ease;
+ }
+ .about-image{
+     display: flex;
+     justify-content: center;
+     flex: 1 1 40%;
+     max-width: 40%;
+     margin-left: 3em;
+     transition: all 0.5s ease;
+ }
+ .about-image:hover{
+     transform: scale(1.025);
+     transition: all 0.3s ease;
+  }
+ .about-image img{
+     flex: 1 1 70% ;
+     max-width: 100%;
+     border: 0;
+ }
+ .section-title{
+     color: var(--skin-color);
+     font-size: 30px;
+     font-weight: 600;
+     padding: 1em 0;
+     transition: all 0.5s ease;
+ }
+ .section-title:hover{
+     transform: scale(1.025);
+     transition: all 0.3s ease;
+  }
+ .section-title h2::before{
+     content: '';
+     position: absolute;
+     width: 160px;
+     height: 45px;
+     background:var(--bg-black-900);
+     opacity: .3;
+     margin-top: -7px;
+     margin-left: -40px;
+ }
+ .row{
+     display: flex;
+     max-width: 100%;
+     justify-content: center;
+     padding:2em 0;
+ }
+ 
+ 
+ .skills-container{
+     display: block;
+     max-width: 75%;
+ }
+ .skills-container p{
+     padding: 1em 0;
+ }
+ .skills-items{
+     display: flex;
+     max-width: 60%;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .skills-items p{
+     flex: 1 1 33%;
+     max-width: 33%;
+ }
+ 
+ 
+ 
+ .exp-container{
+     display: block;
+     max-width: 75%;
+ }
+ 
+ .test-container{
+  display: flex;   
+  justify-content: center;
+  padding: 5em 0 3em;
+ }
+ .testimony{
+     color: var(--skin-color);
+     font-size: 40px;
+     font-weight: 800;
+     transition: all 1s ease;
+ }
+ .testimony::before{
+    content: '';
+    position: absolute;
+    width: 260px;
+    height: 45px;
+    background:var(--bg-black-900);
+    opacity: .3;
+    margin-top: -7px;
+    margin-left: 50px;
+ }
+ .testimony:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+ }
+
+
+ .contact-container{
+     display: block;
+     width: 75%;
+ }
+ .contact-info{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;padding: 2em 0;
+ }
+ .contact-info p::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    background:var(--skin-color);
+    margin-top: 27.5px;
+    margin-left: 82.5px;
+ }
+ .contact-info h5{
+     margin: 1em 0;
+     font-style: italic;
+ }
+ .contact-info h5::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background:var(--skin-color);
+    margin-top: 22.5px;
+    margin-left: 50px;
+ }
+.contact-icon{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-icon img{
+    width:3em;
+    height:3em;
+    transition: all .5s ease;
+    background: var(--bg-black-100);
+}
+.contact-icon img:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+
+
+ @media (max-width: 1130px){
+    
+    .about-container{
+    justify-content: center;
+    }
+    .about-info{
+     flex: 1 1 60%;
+     max-width: 50%;
+    }
+}
+@media (max-width: 750px){
+    nav{
+        padding: .5em 2em 1em;
+    }
+    .about-container{
+        max-width: 100%;
+    }
+    .about-info{
+     flex: 1 1 100%;
+     max-width: 85%;
+     padding-right: 0;
+     text-align: center;
+    }
+    .about-info p{
+        margin-right: 0;
+    }
+    .about-image{
+        flex: 1 1 70%;
+        max-width: 50%;
+    }
+    .skills-items{
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px){
+    body{
+        text-align: center;
+    }
+    nav{
+        padding: .5em 1.5em 1em;
+    }
+ }
+ @media (max-width: 500px){
+    nav{
+        padding: .5em 1em 1em;
+    }
+    .nav-items li a{
+        font-size: 18px;
+        padding: 0 .25em;
+    }
+    .testimony{
+        font-size: 30px;
+ }
+ .testimony::before{
+    width: 200px;
+    height: 35px;
+    margin-left: 1.5em;
+ }
+ .section-title{
+    font-size: 25px;
+}
+}
+@media (max-width: 310px){
+    nav{
+        padding: .5em .5em 1em;
+    }
+    .section-title{
+        font-size: 20px;
+    }
+    .testimony{
+        font-size: 25px;
+ }
+ .typing{
+     font-size: 18px;
+ }
+ .about-info p::before,
+ .testimony::before,
+ .section-title h2::before{
+    display: none;
+ }
+}
